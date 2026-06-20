@@ -3,7 +3,7 @@ from .backend.memory import InMemoryDatabase
 from .backend.exceptions import RecordNotFoundError, RecordAlreadyExistsError, InvalidDataError
 
 class TUI:
-    def init(self):
+    def __init__(self):
         self.db = InMemoryDatabase()
 
     def _print_menu(self):

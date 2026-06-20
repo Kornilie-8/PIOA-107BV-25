@@ -2,7 +2,7 @@
 from .exceptions import RecordNotFoundError, RecordAlreadyExistsError, InvalidDataError
 
 class InMemoryDatabase:
-    def init(self):
+    def __init__(self):
         self._data: dict[int, dict] = {}
         self._columns = ("student_id", "first_name", "second_name", "age", "sex")
 
