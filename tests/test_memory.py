@@ -56,5 +56,5 @@ class TestMemoryDatabase(unittest.TestCase):
             self.db.insert_record("missing", {"student_id": 1, "first_name": "Иван", "age": 20})
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     unittest.main()
